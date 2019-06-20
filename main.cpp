@@ -3,14 +3,6 @@
 
 using namespace std;
 
-class example
-{
-public:
-    example(){}
-    example(int a, int b): _a(a), _b(b){}
-    int _a;
-    int _b;
-};
 
 int main()
 {
