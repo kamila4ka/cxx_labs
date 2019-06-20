@@ -26,7 +26,12 @@ int main()
     cout << "count: " << spisok1.getCount() << endl << "the first list: ";
     spisok1.getData();
     cout << endl << endl;
-
+    
+    List<int> spisok2(spisok1);
+    cout << "copy: ";
+    spisok2.getData();
+    
+    spisok2.clear();
     spisok1.clear();
     cout << "cleared. count: " << spisok1.getCount() << endl;
 
