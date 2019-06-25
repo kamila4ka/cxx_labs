@@ -3,15 +3,6 @@
 
 using namespace std;
 
-class example
-{
-public:
-    example(){}
-    example(int a, int b): _a(a), _b(b){}
-    int _a;
-    int _b;
-};
-
 int main()
 {
     List<int> spisok1;
@@ -20,6 +11,7 @@ int main()
             spisok1.append(i);
     spisok1.addbegin(22);
     spisok1.add(9, 3);
+    spisok1.del(3);
 
 
     cout << "count: " << spisok1.getCount() << endl << "the first list: ";
@@ -29,9 +21,6 @@ int main()
     List<int> spisok2(spisok1);
     cout << "copy: ";
     spisok2.getData();
-
-
-
 
 
     return 0;
